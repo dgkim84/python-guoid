@@ -1,7 +1,9 @@
+import os
+import time
+
 from bottle import route, run, template
-from ip import get_local_ip
-import os, time
 from datetime import datetime
+from snowflake.ip import get_local_ip
 
 guoidEpoch = time.mktime((2012,12,1,0,0,0,0,0,0))
 datacenterId = 0
